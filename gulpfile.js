@@ -7,8 +7,8 @@ var path = 'themes/stgermaincafe/styles/';
 gulp.task('styles', function() {
     gulp.src(path+'sass/**/*.scss')
     	.pipe(sourcemaps.init())
-    	.pipe(autoprefixer())
         .pipe(sass().on('error', sass.logError))
+    	.pipe(autoprefixer())
         .pipe(sourcemaps.write('../maps'))
         .pipe(gulp.dest(path+'css/'));
 });

@@ -1,3 +1,30 @@
-footer {
-	color: red;
+.main-footer {
+	background: $black;
+	color: $white;
+	padding: 25px 0 5px 0;
+
+	h3 {
+		font-size: 20px;
+		text-transform: uppercase;
+		margin-bottom: 25px;
+	}
+
+	a {
+		color: $white;
+	}
+
+	ul {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+
+		li {
+		}
+	}
+
+	.copyright {
+		font-size: 14px;
+		text-align: center;
+		margin: 50px 0 20px 0;
+	}
 }

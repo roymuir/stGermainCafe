@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "2328347e1aa39b62f82b6ff83fef8a36",
+    "content-hash": "cb84e1805402931a8cc328dfe34a80c4",
     "packages": [
         {
             "name": "composer/installers",
@@ -539,6 +539,46 @@
             "time": "2017-05-24T21:32:06+00:00"
         },
         {
+            "name": "silverstripe/widgets",
+            "version": "1.2.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/silverstripe/silverstripe-widgets.git",
+                "reference": "df4844d45f55c56f8a7e1910357a51daf946ec82"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/silverstripe/silverstripe-widgets/zipball/df4844d45f55c56f8a7e1910357a51daf946ec82",
+                "reference": "df4844d45f55c56f8a7e1910357a51daf946ec82",
+                "shasum": ""
+            },
+            "require": {
+                "silverstripe/cms": "^3.2",
+                "silverstripe/framework": "^3.2"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~3.7@stable"
+            },
+            "type": "silverstripe-module",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Ingo Schommer",
+                    "email": "ingo@silverstripe.com"
+                }
+            ],
+            "description": "Widgets are small pieces of functionality such as showing the latest Comments or Flickr Photos. They normally display on the sidebar of your website.",
+            "keywords": [
+                "blog",
+                "silverstripe",
+                "widgets"
+            ],
+            "time": "2017-02-08T22:28:52+00:00"
+        },
+        {
             "name": "unclecheese/betterbuttons",
             "version": "1.3.14",
             "source": {
@@ -948,7 +988,7 @@
         },
         {
             "name": "symfony/yaml",
-            "version": "v2.8.20",
+            "version": "v2.8.21",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/yaml.git",

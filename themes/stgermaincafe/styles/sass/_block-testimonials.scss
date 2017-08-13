@@ -1,0 +1,38 @@
+.testimonials-block {
+
+	hr:last-of-type {
+		display: none;
+	}	
+
+	.testimonial {
+		font-size: 16px;
+		margin-bottom: 0;
+
+		.testimonial-name {
+			font-size: 16px;
+			font-style: italic;
+			font-weight: bold;
+			margin-bottom: 0;
+		}
+
+		.testimonial-position {
+			font-size: 14px;
+			font-style: italic;
+			margin-bottom: 0;
+		}
+
+		.testimonial-location {
+			font-size: 14px;
+			font-style: italic;
+			margin-bottom: 0;
+		}
+
+		.testimonial-description {
+			margin-bottom: 0;
+		}
+	}
+
+	.large .testimonial {
+		font-size: 22px;
+	}
+}

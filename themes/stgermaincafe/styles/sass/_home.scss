@@ -1,0 +1,64 @@
+.home-images {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: -9999;
+	width: 100%;
+	height: 100%;
+	background: $black;
+
+	img {
+		object-fit: cover;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		animation-name: homeImagesFadeInOut;
+		animation-timing-function: ease-in-out;
+		animation-iteration-count: infinite;
+		animation-duration: 55s;
+
+		&:nth-of-type(1) {
+			animation-delay: 44s;
+		}
+
+		&:nth-of-type(2) {
+			animation-delay: 33s;
+		}
+
+		&:nth-of-type(3) {
+			animation-delay: 22s;
+		}
+
+		&:nth-of-type(4) {
+			animation-delay: 11s;
+		}
+
+		&:nth-of-type(5) {
+			animation-delay: 0;
+		}
+
+		@at-root {
+			@keyframes homeImagesFadeInOut {
+				0% {
+					opacity:1;
+				}
+
+				17% {
+					opacity:1;
+				}
+
+				25% {
+					opacity:0;
+				}
+
+				92% {
+					opacity:0;
+				}
+				
+				100% {
+					opacity:1;
+				}
+			}
+		}
+	}
+}

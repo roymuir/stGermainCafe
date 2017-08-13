@@ -1,7 +1,5 @@
-<h1>$Title</h1>
-<div class="content">
-	<div class="typography">
-		$Content
-		$Form
-	</div>
+<h1 class="page-title">$Title</h1>
+<div class="typography">
+	$Content
+	$Form
 </div>

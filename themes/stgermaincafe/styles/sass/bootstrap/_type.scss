@@ -258,9 +258,9 @@ blockquote {
   small,
   .small {
     display: block;
-    font-size: 80%; // back to default font-size
-    line-height: $line-height-base;
-    color: $blockquote-small-color;
+    //font-size: 80%; // back to default font-size
+    //line-height: $line-height-base;
+    //color: $blockquote-small-color;
 
     &:before {
       content: '\2014 \00A0'; // em dash, nbsp
