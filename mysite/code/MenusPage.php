@@ -2,7 +2,8 @@
 class MenusPage extends Page {
 
 	private static $db = array(
-		'PageIntro' => 'Text'
+		'PageIntro' => 'Text',
+		'Description' => 'Text'
 	);
 
 	private static $has_many = array(
@@ -20,6 +21,7 @@ class MenusPage extends Page {
 		$fields = parent::getCMSFields();
 
 		$fields->addFieldToTab('Root.Main', new TextField('PageIntro', 'Page intro'), 'Content');
+		$fields->addFieldToTab('Root.Main', new TextareaField('Description', 'Homepage description'), 'Content');
 
 		$fields->removeByName('Content');
 

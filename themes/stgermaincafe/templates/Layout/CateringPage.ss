@@ -1,14 +1,11 @@
-<h1 class="page-title">$Title</h1>
 <div class="row">
-	<div class="col-xs-12">
-		$Content
-	</div>
-</div>
-<div class="row">
-	<div class="col-xs-9">
+	<div class="col-sm-8">
 		<% include CateringBlock %>
 	</div>
-	<div class="col-xs-3">
-		$Form
+	<div class="col-sm-4">
+		<div class="form-box">
+			<h2>Catering Enquiries</h2>
+			$Form
+		</div>
 	</div>
 </div>

@@ -1,5 +1,13 @@
 .testimonials-block {
 
+	hr {
+		display: none;
+
+		@media (min-width: $screen-sm-min) {
+			display: block;
+		}
+	}
+
 	hr:last-of-type {
 		display: none;
 	}	

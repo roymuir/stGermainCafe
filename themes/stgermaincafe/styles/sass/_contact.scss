@@ -1,0 +1,40 @@
+.contact {
+
+	#map {
+		height: 210px;
+		width: 100%;
+
+		@media (min-width: $screen-sm-min) {
+			height: 300px;
+		}
+
+		@media (min-width: $screen-md-min) {
+			height: 400px;
+		}
+	}
+
+	.contact-section {
+		margin-bottom: 35px;
+
+		h2 {
+			text-transform: uppercase;
+			font-size: 28px;
+			font-weight: bold;
+			margin-top: 0;
+			margin-bottom: 30px;
+			padding-bottom: 10px;
+			border-bottom: 1px solid $light-grey;
+		}
+
+		ul {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+		}
+
+		.phone,
+		.email {
+			margin-bottom: 15px;
+		}
+	}
+}

@@ -5,6 +5,11 @@
 		margin: 0;
 		padding: 0;
 		text-align: right;
+		display: none;
+
+		@media (min-width: $screen-sm-min) {
+			display: block;
+		}
 
 		li {
 			display: inline-block;
@@ -29,6 +34,14 @@
 			display: block;
 			padding: 10px 0;
 			text-transform: uppercase;
+		}
+	}
+
+	.mobile-menu {
+		text-align: right;
+
+		@media (min-width: $screen-sm-min) {
+			display: none;
 		}
 	}
 }

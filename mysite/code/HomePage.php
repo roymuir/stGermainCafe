@@ -44,8 +44,8 @@ class HomePage extends Page {
 
 class HomePage_Controller extends Page_Controller {
 
-	function RandomHomeImages($num=5) {
-		//return DataObject::get('HomeImage', '', 'RAND()', '', $num);
-		return HomeImage::get()->sort('RAND()');
+	function RandomHomeImages($num=1) {
+		return DataObject::get('HomeImage', '', 'RAND()', '', $num);
+		//return HomeImage::get()->sort('RAND()');
     }
 }
