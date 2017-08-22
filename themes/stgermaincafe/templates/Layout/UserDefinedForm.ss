@@ -1,18 +1,7 @@
-<% if URLSegment == 'catering' %>
-    <%-- <div class="row">
-		<div class="col-sm-8">
-			$Content
-		</div>
-		<div class="col-sm-4">
-			<div class="form-box">
-				<h2>Catering Enquiries</h2>
-				$Form
-			</div>
-		</div>
-	</div> --%>
-<% else_if URLSegment == 'contact' %>
+<% if URLSegment == 'contact' %>
 	<div class="row">
 		<div class="col-sm-8">
+			$Content
 			<div class="contact-section">
 				<h2>Contact Details</h2>
 				<ul class="contact-details">
@@ -34,7 +23,7 @@
 			</div>
 		</div>
 		<div class="col-sm-4">
-			<div class="form-box">
+			<div id="form-box" class="form-box">
 				<h2>General Enquiries</h2>
 				$Form
 			</div>

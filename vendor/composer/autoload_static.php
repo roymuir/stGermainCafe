@@ -389,12 +389,12 @@ class ComposerStaticInitb3bc07ca26c069610d9b997ecb340e4d
         'PHP_Token_WHITESPACE' => __DIR__ . '/..' . '/phpunit/php-token-stream/PHP/Token.php',
         'PHP_Token_XOR_EQUAL' => __DIR__ . '/..' . '/phpunit/php-token-stream/PHP/Token.php',
         'PHP_Token_YIELD' => __DIR__ . '/..' . '/phpunit/php-token-stream/PHP/Token.php',
-        'SilverStripe\\Cms\\Test\\Behaviour\\FeatureContext' => __DIR__ . '/../..' . '/cms/tests/behat/features/bootstrap/FeatureContext.php',
-        'SilverStripe\\Cms\\Test\\Behaviour\\FixtureContext' => __DIR__ . '/../..' . '/cms/tests/behat/features/bootstrap/SilverStripe/Cms/Test/Behaviour/FixtureContext.php',
-        'SilverStripe\\Cms\\Test\\Behaviour\\ThemeContext' => __DIR__ . '/../..' . '/cms/tests/behat/features/bootstrap/SilverStripe/Cms/Test/Behaviour/ThemeContext.php',
-        'SilverStripe\\Framework\\Test\\Behaviour\\CmsFormsContext' => __DIR__ . '/../..' . '/framework/tests/behat/features/bootstrap/SilverStripe/Framework/Test/Behaviour/CmsFormsContext.php',
-        'SilverStripe\\Framework\\Test\\Behaviour\\CmsUiContext' => __DIR__ . '/../..' . '/framework/tests/behat/features/bootstrap/SilverStripe/Framework/Test/Behaviour/CmsUiContext.php',
-        'SilverStripe\\Framework\\Test\\Behaviour\\FeatureContext' => __DIR__ . '/../..' . '/framework/tests/behat/features/bootstrap/FeatureContext.php',
+        'SilverStripe\\Cms\\Test\\Behaviour\\FeatureContext' => __DIR__ . '/../..' . '/../../../design work/sites/st-germain-cafe/cms/tests/behat/features/bootstrap/FeatureContext.php',
+        'SilverStripe\\Cms\\Test\\Behaviour\\FixtureContext' => __DIR__ . '/../..' . '/../../../design work/sites/st-germain-cafe/cms/tests/behat/features/bootstrap/SilverStripe/Cms/Test/Behaviour/FixtureContext.php',
+        'SilverStripe\\Cms\\Test\\Behaviour\\ThemeContext' => __DIR__ . '/../..' . '/../../../design work/sites/st-germain-cafe/cms/tests/behat/features/bootstrap/SilverStripe/Cms/Test/Behaviour/ThemeContext.php',
+        'SilverStripe\\Framework\\Test\\Behaviour\\CmsFormsContext' => __DIR__ . '/../..' . '/../../../design work/sites/st-germain-cafe/framework/tests/behat/features/bootstrap/SilverStripe/Framework/Test/Behaviour/CmsFormsContext.php',
+        'SilverStripe\\Framework\\Test\\Behaviour\\CmsUiContext' => __DIR__ . '/../..' . '/../../../design work/sites/st-germain-cafe/framework/tests/behat/features/bootstrap/SilverStripe/Framework/Test/Behaviour/CmsUiContext.php',
+        'SilverStripe\\Framework\\Test\\Behaviour\\FeatureContext' => __DIR__ . '/../..' . '/../../../design work/sites/st-germain-cafe/framework/tests/behat/features/bootstrap/FeatureContext.php',
         'Text_Template' => __DIR__ . '/..' . '/phpunit/php-text-template/src/Template.php',
     );
 

@@ -3,7 +3,7 @@
 		<% loop GalleryImages %>
 		    <div class="gallery-image col-xs-6 col-md-4 col-lg-3">
                 <a href="$Image.Link" title="$Image.Title" data-gallery>
-			        <img src="$Image.Fill(375,245).Link" alt="$Image.Title">
+			        <img data-original="$Image.Fill(375,245).Link" alt="$Image.Title">
 			    </a>
             </div>
 		<% end_loop %>

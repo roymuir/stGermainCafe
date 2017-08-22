@@ -1,7 +1,7 @@
 .main-nav {
 	background: $black;
 
-	ul {
+	ul.nav-items {
 		margin: 0;
 		padding: 0;
 		text-align: right;
@@ -19,9 +19,11 @@
 				display: block;
 				padding: 19px 15px;
 				text-transform: uppercase;
+				transition: all 0.1s ease-out;
 
 				&:hover {
 					text-decoration: none;
+					color: $medium-grey;
 				}
 			}
 		}
@@ -42,6 +44,79 @@
 
 		@media (min-width: $screen-sm-min) {
 			display: none;
+		}
+
+		#menu-button  {
+
+			> a {
+			    display: block;
+			    float: right;
+			    margin-top: 12px;
+			}
+
+			div {
+				width: 30px;
+			    height: 3px;
+			    background-color: $white;
+			    margin: 7px 0;
+			}
+		}
+
+		.overlay {
+			display: block;
+			position: fixed;
+			width: 100%;
+			height: 1000px;
+			top: 0;
+			left: 0;
+			background: $black;
+			z-index: 99999;
+
+			ul {
+				text-align: center;
+				position: relative;
+				top: 15vh;
+				height: 100%;
+				list-style: none;
+		  		margin: 0 auto;
+		  		padding: 0;
+
+		  		li {
+
+		  			a {
+		  				display: block;
+						text-decoration: none;
+						text-transform: uppercase;
+						font-size: 20px;
+						padding: 11px 0;
+						color: $white;
+					}
+				}
+			}
+
+			.overlay-close {
+				position: absolute;
+				height: auto;
+				right: 15px;
+				top: 19px; 
+				text-decoration: none;
+				text-transform: uppercase;
+				color: $white;
+			}
+		}
+
+		.overlay-data {
+			opacity: 0;
+			visibility: hidden;
+			-webkit-transition: all 0.5s;
+			transition: all 0.5s;
+		}
+
+		.overlay-open {
+			opacity: 1;
+			visibility: visible;
+			-webkit-transition: all 0.5s;
+			transition: all 0.5s; 
 		}
 	}
 }

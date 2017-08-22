@@ -2,8 +2,8 @@
 class CateringPage extends UserDefinedForm {
 
 	private static $db = array(
-		'PageIntro' => 'Text',
-		'Description' => 'Text'
+		'About' => 'HTMLText',
+		'HowToOrder' => 'HTMLText'
 	);
 
 	private static $has_many = array(
@@ -19,11 +19,6 @@ class CateringPage extends UserDefinedForm {
 	public function getCMSFields() {
 
 		$fields = parent::getCMSFields();
-
-		$fields->addFieldToTab('Root.Main', new TextField('PageIntro', 'Page intro'), 'Content');
-		$fields->addFieldToTab('Root.Main', new TextareaField('Description', 'Homepage description'), 'Content');
-
-		$fields->removeByName('Content');
 
 		$fields->addFieldToTab('Root.Image', $imageUploadField = new UploadField('Image', 'Image'));
 		$imageUploadField->setFolderName('page-hero-images');
@@ -42,6 +37,10 @@ class CateringPage extends UserDefinedForm {
 
 		$CateringCategories = new GridField('CateringCategories', 'Catering Categories', $this->CateringCategories(), $GFConfig);
 		$fields->addFieldToTab('Root.CateringCategories', $CateringCategories);
+
+		$fields->addFieldToTab('Root.About', new HTMLEditorField('About', 'About Our Catering'));
+
+		$fields->addFieldToTab('Root.HowToOrder', new HTMLEditorField('HowToOrder', 'How To Order'));
 
 		return $fields;
 

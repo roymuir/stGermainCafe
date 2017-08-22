@@ -12,5 +12,22 @@
 
 	.gallery-image {
 		margin-bottom: 30px;
+
+		a {
+			border-bottom: none;
+		}
+
+		img {
+			transform: translateZ(0);
+			transition: opacity 0.1s ease-out;
+
+			&:hover {
+				opacity: 0.9;
+			}
+		}
+
+		img:not([src]) {
+		    visibility: hidden;
+		}
 	}
 }

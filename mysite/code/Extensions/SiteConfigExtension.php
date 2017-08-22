@@ -6,7 +6,7 @@ class SiteConfigExtension extends DataExtension {
 		'Email' => 'Text',
 		'Address' => 'Text',
 		'OpeningHours' => 'Text',
-		'OpeningHoursFull' => 'Text',
+		'OpeningHoursFull' => 'HTMLText',
 		'Facebook' => 'Text',
 		'Instagram' => 'Text'
 	);
@@ -16,7 +16,7 @@ class SiteConfigExtension extends DataExtension {
 		$fields->addFieldToTab('Root.ContactDetails', new TextField('Email', 'Email'));
 		$fields->addFieldToTab('Root.ContactDetails', new TextareaField('Address', 'Address'));
 		$fields->addFieldToTab('Root.OpeningHours', new TextareaField('OpeningHours', 'Opening Hours Short'));
-		$fields->addFieldToTab('Root.OpeningHours', new TextareaField('OpeningHoursFull', 'Opening Hours Full'));
+		$fields->addFieldToTab('Root.OpeningHours', new HtmlEditorField('OpeningHoursFull', 'Opening Hours Full'));
 		$fields->addFieldToTab('Root.Social', new TextField('Facebook', 'Facebook'));
 		$fields->addFieldToTab('Root.Social', new TextField('Instagram', 'Instagram'));
 	}

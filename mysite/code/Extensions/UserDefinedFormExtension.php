@@ -7,8 +7,9 @@ class UserDefinedFormExtension extends DataExtension {
 	);
 
 	public function updateCMSFields(FieldList $fields) {
-		$fields->addFieldToTab('Root.Main', new TextField('PageIntro', 'Page intro'));
-		$fields->addFieldToTab('Root.Main', new TextareaField('Description', 'Homepage description'));
-		//$fields->removeByName('Content');
+		$fields->addFieldToTab('Root.Main', new TextField('PageIntro', 'Page intro'), 'Content');
+		$fields->addFieldToTab('Root.Main', new TextareaField('Description', 'Homepage description'), 'Content');
+		
+		$fields->removeByName('Content');
 	}
 }

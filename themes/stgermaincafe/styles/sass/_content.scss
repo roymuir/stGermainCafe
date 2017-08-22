@@ -9,7 +9,8 @@
 }
 
 body {
-	background: url('../../images/texture-bg.jpg');
+	background: url('../../images/texture-alt-bg.jpg');
+	background-size: 100px 155px;
 }
 
 hr {
@@ -34,13 +35,24 @@ img {
 }
 
 .btn {
-	display: inline-block !important;
+	display: block !important;
 	border: 2px solid $black !important;
 	box-shadow: none;
 	border-radius: 0;
 	text-transform: uppercase;
 	padding: 7px 20px;
 	font-weight: bold;
+	margin-bottom: 10px;
+	transition: all 0.1s ease-out;
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+
+	@media (min-width: $screen-md-min) {
+		display: inline-block !important;
+		margin-bottom: 0;
+	}
 
 	&.white {
 		border-color: $white !important;
@@ -78,24 +90,39 @@ img {
 	}
 
 	.home & {
-		height: 800px;
+		height: 400px;
 		margin-bottom: 50px;
+
+		@media (min-width: $screen-sm-min) {
+			height: 600px;
+		}
+
+		@media (min-width: $screen-md-min) {
+			height: 750px;
+		}
 	}
 
-	.page-image-img img {
+	/* .page-image-img img {
 		width: 100%;
 		height: auto;
 		position: absolute;
 		top: 0;
 		bottom: 0;
 		margin: auto;
-	}
+		max-width: none;
+	} */
+}
+
+.page-image-header .page-image-img {
+    height: 100%;
+	background-size: cover;
+	background-position: top;
 }
 
 .page-title-header {
 	background-color: $black;
 	text-align: center;
-	padding: 50px 0;
+	padding: 30px 0;
 	margin-bottom: 50px;
 
 	.page-title {
@@ -152,6 +179,11 @@ img {
 		margin-bottom: 0;
 	}
 
+	.requiredField label:after {
+		content:" *";
+		color: red;
+	}
+
 	input[type='submit'] {
 		background-color: $black;
 		color: $white;
@@ -159,6 +191,8 @@ img {
 		font-weight: bold;
 		padding: 8px 25px;
 		margin-top: 5px;
+		text-transform: uppercase;
+		transition: all 0.1s ease-out;
 
 		&:hover {
 			background-color: $dark-grey;
@@ -169,4 +203,19 @@ img {
 		color: red;
 		font-size: 14px;
 	}
+}
+
+.message-complete {
+	background-color: #dff0d8;
+    color: #468847;
+    padding: 8px 35px 8px 14px;
+    margin-bottom: 18px;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+    border: 1px solid #d6e9c6;
+    border-radius: 4px;
+
+    p {
+    	margin-bottom: 0;
+    	font-weight: bold;
+    }
 }

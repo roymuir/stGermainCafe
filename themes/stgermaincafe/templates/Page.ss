@@ -5,9 +5,7 @@
 <div class="main-content" id="content">
 	<% if Image %>
 	    <div class="page-image-header">
-	    	<div class="page-image-img">
-				$Image
-			</div>
+	    	<div class="page-image-img" style="background-image:url($Image.Link)"></div>
 		</div>
 	<% end_if %>
 	<% if URLSegment == 'contact' %>
@@ -34,11 +32,7 @@
 					<a href="/menus" class="btn full">Visit Our Menus</a>
 				</div>
 			</div>
-			<div class="page-image-img">
-				<% loop RandomHomeImages %>
-			        $Image
-				<% end_loop %>
-			</div>
+			<div class="page-image-img" style="background-image:url(<% loop RandomHomeImages %>$Image.Link<% end_loop %>)"></div>
 		</div>
 	<% end_if %>
 	<div class="container content">
