@@ -1,0 +1,97 @@
+.catering-block {
+
+	.catering-about {
+
+		h3 {
+			font-size: 22px;
+	    	line-height: initial;
+			margin-top: 0;
+		}
+	}
+
+	.catering-how-to-order {
+		margin: 30px 0;
+
+		h4 {
+			font-weight: bold;
+		}
+	}
+
+	.catering-category {
+		background-color: $white;
+		border: 1px solid rgba(149,152,154,0.5);
+		box-shadow: 0px 2px 5px rgba(0,0,0,0.32);
+		margin-bottom: 30px;
+
+		@media (min-width: $screen-md-min) {
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+
+		.catering-category-inner {
+			padding: 20px 20px 35px 20px;
+
+			h2 {
+				text-transform: uppercase;
+				font-weight: 600;
+				font-size: 28px;
+				margin: 20px 0 35px 0;
+				padding: 10px 0;
+				border-top: 1px solid $medium-grey;
+				border-bottom: 1px solid $medium-grey;
+			}
+		}
+	}
+
+	.catering-option {
+		margin-bottom: 29px;
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+
+		ul {
+			padding-left: 17px;
+			margin-top: 7px;
+			margin-bottom: 0;
+
+			li {
+				margin-bottom: 5px;
+
+				p {
+					margin-bottom: 0;
+				}
+
+				small {
+					display: inline-block;
+					font-style: italic;
+					font-size: 12px;
+				}
+			}
+		}
+
+		.catering-option-name,
+		.catering-option-price {
+			font-size: 18px;
+		}
+
+		.catering-option-name {
+			margin-bottom: 7px;
+		}
+
+		.catering-option-price {
+			margin-top: 15px;
+			margin-bottom: 0;
+		}
+
+		.catering-option-disclaimers {
+			font-size: 13px;
+			margin-bottom: 0;
+		}
+
+		.catering-option-description {
+			margin-bottom: 0;
+		}
+	}
+}

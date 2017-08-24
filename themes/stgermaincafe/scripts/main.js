@@ -51,4 +51,16 @@ $( document ).ready(function() {
 		initMap();
 	}
 
+	// Catering category order
+	if($('.catering').length) {
+
+		function cateringCategory() {
+			if ($(window).width() > 768 && $(window).width() < 992) {
+				$('.catering-block .col-sm-6:last-child .catering-category:first-child').appendTo('.catering-block .col-sm-6:first-child');
+			}
+		}
+
+		cateringCategory();
+	}
+
 });

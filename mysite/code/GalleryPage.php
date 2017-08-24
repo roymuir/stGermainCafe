@@ -33,7 +33,7 @@ class GalleryPage extends Page {
 			new GridFieldAddNewButton('toolbar-header-right'),
 			new GridFieldSortableHeader(),
 			new GridFieldDataColumns(),
-			new GridFieldPaginator(10),
+			new GridFieldPaginator(50),
 			new GridFieldEditButton(),
 			new GridFieldDeleteAction(),
 			new GridFieldDetailForm(),

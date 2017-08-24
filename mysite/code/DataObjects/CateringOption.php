@@ -18,8 +18,7 @@ class CateringOption extends DataObject {
 	);
 
 	private static $has_one = array(
-		'ParentPage' => 'CateringCategory',
-		'Image' => 'Image'
+		'ParentPage' => 'CateringCategory'	
 	);
 
 	private static $has_many = array(
@@ -50,9 +49,6 @@ class CateringOption extends DataObject {
 		$fields->addFieldToTab('Root.Main', new CheckboxField('GlutenFree', 'Gluten Free'));
 		$fields->addFieldToTab('Root.Main', new CheckboxField('Vegetarian', 'Vegetarian'));
 		$fields->addFieldToTab('Root.Main', new CheckboxField('Vegan', 'Vegan'));
-
-		$fields->addFieldToTab('Root.Main', $imageUploadField = new UploadField('Image', 'Image'));
-		$imageUploadField->setFolderName('catering-images');
 
 		$GFConfig = GridFieldConfig::create()->addComponents(
 			new GridFieldToolbarHeader(),

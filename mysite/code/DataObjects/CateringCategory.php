@@ -7,7 +7,8 @@ class CateringCategory extends DataObject {
 	);
 
 	private static $has_one = array(
-		'ParentPage' => 'UserDefinedForm'
+		'ParentPage' => 'UserDefinedForm',
+		'Image' => 'Image'
 	);
 
 	private static $has_many = array(
@@ -26,6 +27,9 @@ class CateringCategory extends DataObject {
 
 		$fields->addFieldToTab('Root.Main', new HiddenField('SortID', 'SortID'));
 		$fields->addFieldToTab('Root.Main', new TextField('Name', 'Name'));
+
+		$fields->addFieldToTab('Root.Main', $imageUploadField = new UploadField('Image', 'Image'));
+		$imageUploadField->setFolderName('catering-images');
 
 		$GFConfig = GridFieldConfig::create()->addComponents(
 			new GridFieldToolbarHeader(),
