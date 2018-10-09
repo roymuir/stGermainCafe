@@ -13,7 +13,7 @@ $( document ).ready(function() {
 	});
 
 	// Header image parallax
-	if(!$('.contact').length) {
+	/*if(!$('.contact').length) {
 		if ($(window).width() > 768) {
 			$(window).bind('scroll', function(e){
 		    	parallaxScroll();
@@ -24,7 +24,7 @@ $( document ).ready(function() {
 		    var scrolled = $(window).scrollTop();
 		    $('.page-image-img').css('background-position-y', (0-(scrolled*.25))+'px');
 		}
-	}
+	}*/
 
 	// Gallery
 	var myLazyLoad = new LazyLoad();
@@ -34,7 +34,7 @@ $( document ).ready(function() {
 		function initMap() {
 		    var stgermain = {lat: -39.4916434, lng: 176.9162708};
 		    var map = new google.maps.Map(document.getElementById('map'), {
-		      	zoom: 16,
+		      	zoom: 17,
 		      	center: stgermain,
 		      	scrollwheel: false,
 		      	streetViewControl: false,
@@ -55,8 +55,13 @@ $( document ).ready(function() {
 	if($('.catering').length) {
 
 		function cateringCategory() {
-			if ($(window).width() > 768 && $(window).width() < 992) {
-				$('.catering-block .col-sm-6:last-child .catering-category:first-child').appendTo('.catering-block .col-sm-6:first-child');
+			if ($(window).width() > 767 && $(window).width() < 992) {
+				var catQuantity = $('.catering-block .col-sm-6:last-child .catering-category').length;
+				for (var i = 0; i < catQuantity; i++) {
+					//console.log(i);
+					$('.catering-block .col-sm-6:last-child .catering-category:nth-child('+ (i+1) + ')').appendTo('.catering-block .col-sm-6:nth-child('+ (i+1) + ')');
+				}
+	
 			}
 		}
 

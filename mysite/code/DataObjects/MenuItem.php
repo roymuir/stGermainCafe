@@ -7,7 +7,8 @@ class MenuItem extends DataObject {
 		'Price' => 'Currency',
 		'Description' => 'Text',
 		'GlutenFree' => 'Boolean',
-		'Vegetarian' => 'Boolean'
+		'Vegetarian' => 'Boolean',
+		'Vegan' => 'Boolean'
 	);
 
 	private static $has_one = array(
@@ -36,6 +37,7 @@ class MenuItem extends DataObject {
 		$fields->addFieldToTab('Root.Main', new TextareaField('Description', 'Description'));
 		$fields->addFieldToTab('Root.Main', new CheckboxField('GlutenFree', 'Gluten Free'));
 		$fields->addFieldToTab('Root.Main', new CheckboxField('Vegetarian', 'Vegetarian'));
+		$fields->addFieldToTab('Root.Main', new CheckboxField('Vegan', 'Vegan'));
 
 		return $fields;
 

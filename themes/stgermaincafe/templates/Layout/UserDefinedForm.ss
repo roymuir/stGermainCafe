@@ -1,6 +1,6 @@
 <% if URLSegment == 'contact' %>
 	<div class="row">
-		<div class="col-sm-8">
+		<div class="col-sm-6">
 			$Content
 			<div class="contact-section">
 				<h2>Contact Details</h2>
@@ -17,12 +17,12 @@
 			<div class="contact-section">
 				<h2>Follow Us</h2>
 				<ul>
-					<li><a href="$SiteConfig.Facebook" target="_blank">Facebook</a></li>
-					<li><a href="$SiteConfig.Instagram" target="_blank">Instagram</a></li>
+					<li><a href="$SiteConfig.Facebook" target="_blank" rel="noopener">Facebook</a></li>
+					<li><a href="$SiteConfig.Instagram" target="_blank" rel="noopener">Instagram</a></li>
 				</ul>
 			</div>
 		</div>
-		<div class="col-sm-4">
+		<div class="col-sm-6">
 			<div id="form-box" class="form-box">
 				<h2>General Enquiries</h2>
 				$Form

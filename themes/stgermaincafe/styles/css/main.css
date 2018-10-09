@@ -2491,7 +2491,8 @@ img {
   .form-box input[type='email'],
   .form-box textarea {
     width: 100%;
-    padding: 7px; }
+    padding: 6px;
+    border: 1px solid darkgray; }
   .form-box textarea {
     margin-bottom: 0; }
   .form-box .requiredField label:after {
@@ -2674,8 +2675,7 @@ img {
     .menu-category .menu-item .menu-item-price {
       margin-bottom: 0; }
     .menu-category .menu-item small {
-      margin-bottom: 11px;
-      display: block; }
+      margin: 0 2px 11px 2px; }
     .menu-category .menu-item:last-child {
       margin-bottom: 0; }
 

@@ -14,8 +14,8 @@
 					<div class="col-sm-4 col-md-3">
 						<h3>Follow Us</h3>
 						<ul>
-							<li><a href="$SiteConfig.Facebook" target="_blank">Facebook</a></li>
-							<li><a href="$SiteConfig.Instagram" target="_blank">Instagram</a></li>
+							<li><a href="$SiteConfig.Facebook" target="_blank" rel="noopener">Facebook</a></li>
+							<li><a href="$SiteConfig.Instagram" target="_blank" rel="noopener">Instagram</a></li>
 						</ul>
 					</div>
 				</div>

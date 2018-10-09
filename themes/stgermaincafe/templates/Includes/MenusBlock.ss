@@ -18,6 +18,12 @@
 								<% if GlutenFree %>
 								    <small class="menu-item-gluten">* Gluten Free</small>
 								<% end_if %>
+								<% if Vegetarian %>
+								    <small class="menu-item-vegetarian">* Vegetarian</small>
+								<% end_if %>
+								<% if Vegan %>
+								    <small class="menu-item-vegan">* Vegan</small>
+								<% end_if %>
 								<% if Price %>
 								    <p class="menu-item-price">$Price.Nice()</p>
 								<% end_if %>

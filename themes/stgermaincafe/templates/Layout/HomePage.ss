@@ -4,7 +4,11 @@
 			<% with $Page(menus) %>
 				<a href="$Link">$Image.CroppedImage(767,500)</a>
 			    <h1>$Title</h1>
-			    <p>$Description</p>
+			    <% if Description %>
+			        <p>$Description</p>
+			    <% else %>
+			    	<p>$PageIntro</p>    
+			    <% end_if %>
 			    <a href="$Link" class="btn full">View Our Menus</a>
 			<% end_with %>
 		</div>
@@ -14,7 +18,11 @@
 			<% with $Page(catering) %>
 				<a href="$Link">$Image.CroppedImage(767,500)</a>
 			    <h1>$Title</h1>
-			    <p>$Description</p>
+			    <% if Description %>
+			        <p>$Description</p>
+			    <% else %>
+			    	<p>$PageIntro</p>    
+			    <% end_if %>
 			    <a href="$Link" class="btn full">View Our Catering Menus</a>
 			<% end_with %>
 		</div>
@@ -24,7 +32,11 @@
 			<% with $Page(gallery) %>
 				<a href="$Link">$Image.CroppedImage(767,500)</a>
 			    <h1>$Title</h1>
-			    <p>$Description</p>
+			    <% if Description %>
+			        <p>$Description</p>
+			    <% else %>
+			    	<p>$PageIntro</p>    
+			    <% end_if %>
 			    <a href="$Link" class="btn full">View Our Gallery</a>
 			<% end_with %>
 		</div>

@@ -1117,6 +1117,48 @@
         ]
     },
     {
+        "name": "silverstripe/googlesitemaps",
+        "version": "1.x-dev",
+        "version_normalized": "1.9999999.9999999.9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/wilr/silverstripe-googlesitemaps.git",
+            "reference": "552684ce122c724aa737df3babb8717919e00a35"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/wilr/silverstripe-googlesitemaps/zipball/552684ce122c724aa737df3babb8717919e00a35",
+            "reference": "552684ce122c724aa737df3babb8717919e00a35",
+            "shasum": ""
+        },
+        "require": {
+            "silverstripe/framework": ">=3.1"
+        },
+        "time": "2016-10-10T02:59:32+00:00",
+        "type": "silverstripe-module",
+        "extra": {
+            "installer-name": "googlesitemaps"
+        },
+        "installation-source": "source",
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "authors": [
+            {
+                "name": "Will Rossiter",
+                "email": "will@fullscreen.io"
+            }
+        ],
+        "description": "SilverStripe support for the Google Sitemaps XML, enabling Google and other search engines to see all urls on your site. This helps your SilverStripe website rank well in search engines, and to encourage the information on your site to be discovered quickly.",
+        "homepage": "https://github.com/wilr/silverstripe-googlesitemaps",
+        "keywords": [
+            "googlesitemaps",
+            "seo",
+            "silverstripe"
+        ]
+    },
+    {
         "name": "micschk/silverstripe-userforms_send-to-emailfield",
         "version": "dev-master",
         "version_normalized": "9999999-dev",

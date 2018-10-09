@@ -2,8 +2,8 @@
 class HomePage extends Page {
 
 	private static $db = array(
-		'HomeTitle' => 'Text',
-		'HomeDescription' => 'Text'
+		// 'HomeTitle' => 'Text',
+		// 'HomeDescription' => 'Text'
 	);
 
 	private static $has_many = array(
@@ -18,8 +18,8 @@ class HomePage extends Page {
 
 		$fields->removeByName('Content');
 
-		$fields->addFieldToTab('Root.Main', new TextField('HomeTitle', 'Title'), 'Metadata');
-		$fields->addFieldToTab('Root.Main', new TextareaField('HomeDescription', 'Description'), 'Metadata');
+		// $fields->addFieldToTab('Root.Main', new TextField('HomeTitle', 'Title'), 'Metadata');
+		// $fields->addFieldToTab('Root.Main', new TextareaField('HomeDescription', 'Description'), 'Metadata');
 
 		$GFConfig = GridFieldConfig::create()->addComponents(
 			new GridFieldToolbarHeader(),

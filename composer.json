@@ -12,7 +12,8 @@
 		"silverstripe/userforms": "^4.3",
 		"silverstripe-australia/gridfieldextensions": "^1.4",
 		"gdmedia/ss-auto-git-ignore": "^1.0",
-		"unclecheese/display-logic": "1.4.x-dev"
+		"unclecheese/display-logic": "1.4.x-dev",
+		"silverstripe/googlesitemaps": "1.x-dev"
 	},
 	"require-dev": {
 		"phpunit/PHPUnit": "~3.7@stable"
